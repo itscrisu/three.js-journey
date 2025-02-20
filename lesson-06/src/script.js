@@ -76,7 +76,10 @@ scene.add(camera)
 // camera.lookAt(mesh.position)
 // scene.add(camera)
 
-// Controls
+/**
+ * Controls
+ * these are handy but they have limitations, if u want to use these, make sure that they support all the features you need (some movements have limitations)
+ */
 const controls = new OrbitControls(camera, canvas)
 // Damping
 // we can actually declared it here, but it needs to render for each frame to work smoothly
