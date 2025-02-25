@@ -43,8 +43,15 @@ const scene = new THREE.Scene()
 
 // what if we want to create more than 1 triangle?
 const count = 50
+// This will create 50 triangles x 3 vertices x 3 coordinates
 const vertices = new Float32Array(count * 3 * 3)
 for (let i = 0; i < count * 3 * 3; i++){
+
+    // now we run the array and we are putting random values between -2 and 2. Why?
+    // Math.random will generate a random number between 0 and 1
+    // putting - 0.5 will change that to be between -0.5 and 0.5
+    // multiplying by 4 = -2 and 2
+    // each value corresponds to a coordinate (x, y, z) for a vertex for some triangle
     vertices[i] = (Math.random() - 0.5) * 4
 }
 
